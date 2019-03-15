@@ -156,7 +156,7 @@
 	</section>
 
 
-	<!-- ****************************** Features Section ************************** -->
+	<!-- ****************************** Register Section ************************** -->
 
 	<section id="register" class="block">
 		<section class="container">
@@ -170,8 +170,33 @@
 				</h1></div>
 			</section>	
 			<section class="row">
-				<div align="center"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffaa7Ve8DPcPmDc3By3dPPdew1lHudMOSwNNhOwJ2A54TZQg/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-			</div>
+				<div align="center"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffaa7Ve8DPcPmDc3By3dPPdew1lHudMOSwNNhOwJ2A54TZQg/viewform?embedded=true" width="640" height="320" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+			</div><div align="center">
+			<button  type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Make Payment via UPI</button>
+		</div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Pay e-Scape Mobile Making + IoT Workshop Fees via UPI</h4>
+        </div>
+        <div class="modal-body">
+          <p>Please Enter your Name and Contact number to generate Payment Link. Workshop Fees is ₹900 including lunch and refreshments.</p>
+		  <input type="text" name="payeename" value="Name" style="border-radius: 25px;border: 2px solid #31B0D5;padding: 20px;width: 200px;height: 15px;"></input><br><br>
+		  <input type="text" name="contactno" value="Contact No." style="border-radius: 25px;border: 2px solid #31B0D5;padding: 20px;width: 200px;height: 15px;"></input>
+		</div>
+        <div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  <a href="upi://pay?pa=irshadmizri@okicici&pn=Irshad&tn=pre_e-Scape_Workshop_Payment&am=900"><button type="button" class="btn btn-info btn-lg" data-dismiss="modal">Pay</button></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 				</section>
 			<div class="clearfix"></div>
 		</section>
