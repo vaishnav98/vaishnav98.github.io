@@ -810,7 +810,12 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/jquery.placeholder.min.js"></script>
    <script src="js/jquery.magnific-popup.min.js"></script>  
-   <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){if ($('#modal-01').length) {$.magnificPopup.open({items: {src: '#modal-01'},type: 'inline'});}
+setTimeout(function() { $.magnificPopup.close();}, 4000);
+});
+  </script>
 
 </body>
 
